@@ -1,0 +1,100 @@
+---
+
+---
+
+<nav
+  class="fixed start-0 top-0 z-20 w-full border-b border-gray-600 bg-gray-900"
+>
+  <div
+    class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
+  >
+    <a
+      href="https://yosmarhinestroza.dev/"
+      class="flex items-center space-x-3 rtl:space-x-reverse"
+    >
+      <img
+        src="https://lh3.googleusercontent.com/a/ACg8ocIvO4uJGgLl0ZF738Gmq3Nmh8-tVYSM1960jWIoHZQYWjM=s360-c-no"
+        class="h-8 rounded-full"
+        alt="Yosmar Hinestroza"
+      />
+      <span
+        class="self-center whitespace-nowrap text-2xl font-semibold text-white"
+        >Yosmar Hinestroza</span
+      >
+    </a>
+
+    <div class="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
+      <a
+        href="mailto:yosmarpc@gmail.com"
+        target="_blank"
+        class="focus:ring-while-800 rounded-lg bg-yellow-300 px-4 py-2 text-center text-sm font-medium text-black focus:outline-none focus:ring-4 focus:ring-blue-100 sm:invisible md:invisible lg:visible xl:visible"
+        >yosmarpc@gmail.com</a
+      >
+      <a
+        id="menu-button"
+        data-collapse-toggle="navbar-sticky"
+        data-nav-toggle="#navbar-sticky"
+        href="#"
+        class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-sticky"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="h-5 w-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"></path>
+        </svg>
+      </a>
+    </div>
+    <div
+      id="menu-open"
+      class="navbar hidden w-full items-center justify-between md:order-1 md:flex md:w-auto"
+      id="navbar-sticky"
+    >
+      <ul
+        class="mt-4 flex flex-col rounded-lg border border-gray-100 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 rtl:space-x-reverse dark:border-gray-700 dark:bg-gray-800 md:dark:bg-gray-900"
+      >
+        <li>
+          <a
+            href="#quien-soy"
+            class="btn md:bg-transparen block rounded px-3 py-2 text-white hover:text-yellow-300 md:p-0"
+            aria-current="page">Quien Soy</a
+          >
+        </li>
+        <li>
+          <a
+            href="#experiencia-loboral"
+            class="btn md:bg-transparen block rounded px-3 py-2 text-white hover:text-yellow-300 md:p-0"
+            >Experiencia</a
+          >
+        </li>
+        <li>
+          <a
+            href="#projects"
+            class="btn md:bg-transparen block rounded px-3 py-2 text-white hover:text-yellow-300 md:p-0"
+            >Proyectos</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const button = document.querySelector("#menu-button") as Element;
+  const menuOpen = document.querySelector("#menu-open") as Element;
+
+  button?.addEventListener("click", () => {
+    menuOpen.classList.toggle("hidden");
+  });
+</script>
